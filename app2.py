@@ -114,15 +114,21 @@ if analyze_btn and raw_text.strip():
         st.subheader("📊 Sales Visualizations")
         df_chart = pd.DataFrame({"Quarter": quarters, "Sales": sales})
 
+        # Two columns: Line chart + Pie chart
         col1, col2 = st.columns(2)
+
+        # Line chart
         with col1:
             st.line_chart(df_chart.set_index("Quarter"))
+
+        # Pie chart
         with col2:
             fig, ax = plt.subplots()
             ax.pie(sales, labels=quarters, autopct="%1.1f%%", startangle=90,
                    colors=['#2563eb','#38bdf8','#22c55e','#facc15'])
             ax.axis("equal")
             st.pyplot(fig)
+
         st.markdown('</div>', unsafe_allow_html=True)
 
     # ---------- RISKS ----------
