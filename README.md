@@ -18,13 +18,14 @@ An intelligent, Streamlit-powered web application designed to process market res
 ---
 
 ## 📂 Project Structure
-
+'''text
 AI-tool-for-Market-Trend-Summarization/
 │
 ├── analyzer.py        # Core local LLM execution script (Ollama integration & JSON parsing)
 ├── app2.py            # Streamlit frontend, visualization logic, and UI components
 ├── prompts.py         # Prompt engineering templates (chunk and final analysis prompts)
 └── requirements.txt   # Project python dependencies
+'''
 🛠️ Tech Stack
 Language: Python
 
