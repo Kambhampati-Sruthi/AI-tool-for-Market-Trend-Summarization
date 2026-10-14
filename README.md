@@ -19,7 +19,6 @@ An intelligent, Streamlit-powered web application designed to process market res
 
 ## 📂 Project Structure
 
-```
 AI-tool-for-Market-Trend-Summarization/
 │
 ├── analyzer.py        # Core local LLM execution script (Ollama integration & JSON parsing)
